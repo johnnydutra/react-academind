@@ -1,4 +1,4 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
 const App = () => {
   const expenses = [
@@ -7,7 +7,7 @@ const App = () => {
     { id: "e3", title: "Fila Kenya Racer 5", amount: 399.99, date: new Date(2022, 3, 23)},
     { id: "e4", title: "Saucony Fastwitch 9", amount: 349.99, date: new Date(2021, 11, 11)}
   ];
-  
+
   return (
     <div>
       <h2>Let's get started!</h2>
