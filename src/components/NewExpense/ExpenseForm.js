@@ -9,7 +9,7 @@ const ExpenseForm = () => {
   //   enteredTitle: "",
   //   enteredAmount: "",
   //   enteredDate: ""
-  });
+  // });
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
