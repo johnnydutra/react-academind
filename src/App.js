@@ -9,9 +9,13 @@ const App = () => {
     { id: "e4", title: "Saucony Fastwitch 9", amount: 349.99, date: new Date(2021, 11, 11)}
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
