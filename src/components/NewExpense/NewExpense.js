@@ -19,14 +19,14 @@ const NewExpense = (props) => {
     setIsFormShowing(true);
   };
 
-  const closeFormHandler = () => {
+  const hideFormHandler = () => {
     setIsFormShowing(false);
   };
 
   return (
     <div className="new-expense">
-      {!isEditing && <button onClick={showFormHandler}>Add New Expense</button>}
-      {isEditing && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={closeFormHandler} />}
+      {!isFormShowing && <button onClick={showFormHandler}>Add New Expense</button>}
+      {isFormShowing && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancel={hideFormHandler} />}
     </div>
   );
 };
